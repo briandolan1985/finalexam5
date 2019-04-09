@@ -1,0 +1,33 @@
+<html>
+<head>
+  <!-- Script call here -->
+  <script type="text/javascript" src="script.js"></script>
+  </head>
+<body>
+  <h2>Problem#5</h2>
+  <p id="persons"></p>
+
+<script>
+  //Funtion for Person
+  function Person(first,last,age,height) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.height = height;
+  }
+
+  //Input Age
+  var comedian = new Person("Joey","Diaz",56,70)
+
+  //Display Output
+  document.getElementById('persons').innerHTML =
+  "The actor is " + comedian.firstName + " " + comedian.lastName;
+
+  </script>
+
+  <button type="button" onclick="alterText()">ChangeText</button>
+  <button type="button" onclick="refresh()">Reload</button>
+
+
+</body>
+</html>
